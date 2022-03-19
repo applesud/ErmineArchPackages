@@ -1,11 +1,12 @@
-pkgname=queercat
+pkgname=queercat-git
+_pkgname=queercat
 pkgver=20210518
 pkgrel=1
 pkgdesc="High-performance implementation of lolcat (with flags!)"
 arch=('i686' 'x86_64')
 url="https://github.com/Elsa002/queercat"
 license=('WTFPL')
-source=("https://github.com/Else002/${pkgname}.git#commit=c534b0226f71158b2121c65b70dee495a2eae824")
+source=("https://github.com/Else002/${_pkgname}.git#commit=c534b0226f71158b2121c65b70dee495a2eae824")
 sha256sums=('2ddb8cc5f66a6fafaa59d824f3cb353453b618704b60a2fb92ace62601829b767809a675eb07289d9f3d687352e556f794777159e9c8cb8ceed7152825f0d567')
 
 build() {
