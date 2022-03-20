@@ -10,12 +10,12 @@ source=("git+https://github.com/Elsa002/${_pkgname}.git#commit=c534b0226f71158b2
 sha256sums=('SKIP')
 
 build() {
-  cd "${srcdir}/${_pkgname}-${pkgver}"
+  cd "${srcdir}/${_pkgname}"
   gcc main.c -lm -o queercat
 }
 
 package() {
-  cd "${srcdir}/${_pkgname}-${pkgver}"
+  cd "${srcdir}/${_pkgname}"
   mkdir -p "${pkgdir}/usr/bin"
   cp queercat "$pkgdir/usr/bin"
 }
